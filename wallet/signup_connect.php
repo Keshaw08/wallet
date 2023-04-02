@@ -24,7 +24,7 @@
         $stmt -> bind_param("sssisis",$name,$email,$password,$phone_number,$dob,$pin,$address);
         $execval = $stmt->execute();
         echo $execval;
-        header("location: index.html");
+        header("location: signin.html");
         $stmt->close();
         $conn->close();
     }

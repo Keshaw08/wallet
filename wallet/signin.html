@@ -8,16 +8,30 @@
   <div class="screen">
     <div class="screen__content">
       <div class="logo">
-        <img src="./../sw-removebg-preview.png" alt="" />
+        <img src="./sw-removebg-preview.png" alt="" />
       </div>
-      <form class="login">
+      <form action="signin_connect.php" method="post" class="login">
         <div class="login__field">
           <i class="login__icon fas fa-user"></i>
-          <input type="text" class="login__input" placeholder="Email" />
+          <input
+            type="text"
+            name="email"
+            value=""
+            class="login__input"
+            placeholder="Email"
+            required
+          />
         </div>
         <div class="login__field">
           <i class="login__icon fas fa-lock"></i>
-          <input type="password" class="login__input" placeholder="Password" />
+          <input
+            type="password"
+            name="password"
+            value=""
+            class="login__input"
+            placeholder="Password"
+            required
+          />
         </div>
         <button class="button login__submit">
           <span class="button__text">Log In Now</span>
@@ -25,7 +39,7 @@
         </button>
       </form>
       <button class="btn btn-primary"></button>
-      <a href="../signup.html" class="link-tag">Sing-Up</a>
+      <a href="./signup.html" class="link-tag">Sing-Up</a>
     </div>
     <div class="screen__background">
       <span class="screen__background__shape screen__background__shape4"></span>
