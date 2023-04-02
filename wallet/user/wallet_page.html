@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./wallet_page.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Wallet</title>
+  </head>
+  <body>
+    <div class="main_wallet">
+      <div class="row">
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Stark Wallet</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#"
+                    ><i class="glyphicon glyphicon-info-sign"></i> About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="glyphicon glyphicon-log-in"></span> Logout</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 profile">
+          <div class="profile_head">
+            <h3>USER</h3>
+            <hr id="p_hr">
+          </div>
+          <div class="username">
+            <img src="./../a.png" alt="">
+            Tony Stark
+          </div>
+          <div class="details">
+            <h4>Details</h4>
+            <hr id="d_hr">
+            <span>Email:</span>
+            <span>Phone Number:</span>
+            <span>DOB:</span>
+            <span>Address:</span>
+          </div>
+          <div class="edit_btn">
+            <button class="button" id="edit_button">EDIT</button>
+          </div>
+        </div>
+        <div class="col-lg-7 wallet_balance">
+            <span><h3>BALANCE</h3></span>
+            <hr>
+            <div class="balance">
+                <span> Amount Avaliable </span>
+                <div class="amount">
+                    <span>₹</span><span>70000000</span>
+                </div>
+            </div>
+            <div class="balance_buttons">
+                <button class="button"> Widraw Money</button>
+                <button class="button"> Add Money</button>
+
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer col-lg-12"> ©2023 Stark Wallet
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

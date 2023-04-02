@@ -20,7 +20,7 @@ error_reporting();
             if($email_id == $email){
                 if($password == $pass){
                     // echo "Login Successfull!!";
-                    header("location: index.html");
+                    header("location: user/wallet_page.html");
                 }
                 else{
                     echo "Email or Password did not match.";
