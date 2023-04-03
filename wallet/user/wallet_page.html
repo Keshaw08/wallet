@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Wallet</title>
+    <script type="text/javascript" src="./script.js"></script>
   </head>
   <body>
     <div class="main_wallet">
@@ -71,12 +72,12 @@
             <div class="balance">
                 <span> Amount Avaliable </span>
                 <div class="amount">
-                    <span>₹</span><span>70000000</span>
+                    <span>₹</span><span id="current_amount">70000</span>
                 </div>
             </div>
             <div class="balance_buttons">
-                <button class="button"> Widraw Money</button>
-                <button class="button"> Add Money</button>
+                <button class="button" onclick="widraw()"> Widraw Money</button>
+                <button class="button" onclick="add()"> Add Money</button>
 
             </div>
         </div>
