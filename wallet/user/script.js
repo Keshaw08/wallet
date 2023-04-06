@@ -9,6 +9,7 @@ function widraw(){
     var pin=prompt("Enter PIN");
     if(pin==1111){
         var b=prompt("Enter Amount")
+        a=parseInt(a)
         if(b<=a){
             var d=parseInt(a)-parseInt(b);
             document.getElementById("current_amount").innerHTML=d;
