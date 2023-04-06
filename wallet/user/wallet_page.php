@@ -25,16 +25,22 @@ session_start();
   $user_email = $_SESSION['email'];
 
   $conn = mysqli_connect("localhost:3306", "root", "", "wallet");
-  $sql = "SELECT email,name,pin from user_details where email = '$user_email'";
+  $sql = "SELECT email,name,pin,dob,address,phone_no from user_details where email = '$user_email'";
   $result = mysqli_query($conn, $sql);
 
   $amount = "<div id='demo'></div>";
   $pin = '';
   $name = '';
+  $dob = '';
+  $address = '';
+  $phone_no = '';
 
   while ($info = mysqli_fetch_array($result)) {
     $pin = $info["pin"];
     $name = $info["name"];
+    $dob = $info["dob"];
+    $address = $info["address"];
+    $phone_no = $info["phone_no"];
   }
 
   if ($conn->connect_error) {
@@ -110,7 +116,7 @@ session_start();
               <a href="#"><i class="glyphicon glyphicon-info-sign"></i> About Us</a>
             </li>
             <li>
-              <a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a>
+              <a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a>
             </li>
           </ul>
         </div>
@@ -124,15 +130,15 @@ session_start();
         </div>
         <div class="username">
           <img src="./../a.png" alt="">
-          Tony Stark
+          <?php echo "$name" ?>
         </div>
         <div class="details">
-          <h4>Details</h4>
+          <h4><strong>Details</strong></h4>
           <hr id="d_hr">
-          <span>Email:</span>
-          <span>Phone Number:</span>
-          <span>DOB:</span>
-          <span>Address:</span>
+          <span><strong>Email : </strong> <?php echo "$user_email" ?></span>
+          <span><strong>Phone Number : </strong> <?php echo "$phone_no" ?></span>
+          <span><strong>Date of Birth : </strong>  <?php echo "$dob" ?></span>
+          <span><strong>Address : </strong>  <?php echo "$address" ?></span>
         </div>
         <div class="edit_btn">
           <button class="button" id="edit_button">EDIT</button>
@@ -140,7 +146,7 @@ session_start();
       </div>
       <div class="col-lg-7 wallet_balance">
         <span>
-          <h3>BALANCE <?php $pin ?></h3>
+          <h3>BALANCE </h3>
         </span>
         <hr>
         <div class="balance">
