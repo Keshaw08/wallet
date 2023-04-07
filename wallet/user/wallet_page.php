@@ -42,14 +42,12 @@ session_start();
     $address = $info["address"];
     $phone_no = $info["phone_no"];
   }
-
   if ($conn->connect_error) {
     echo "$conn->connect_error";
     die("Connection Failed : " . $conn->connect_error);
   } else {
 
     $stmt = $conn->prepare("insert into transactions(name, email, balance, pin) value(?,?,?,?)");
-
 
     $stmt->bind_param("ssii", $name, $user_email, $amount, $pin);
     $execval = $stmt->execute();
@@ -137,8 +135,8 @@ session_start();
           <hr id="d_hr">
           <span><strong>Email : </strong> <?php echo "$user_email" ?></span>
           <span><strong>Phone Number : </strong> <?php echo "$phone_no" ?></span>
-          <span><strong>Date of Birth : </strong>  <?php echo "$dob" ?></span>
-          <span><strong>Address : </strong>  <?php echo "$address" ?></span>
+          <span><strong>Date of Birth : </strong> <?php echo "$dob" ?></span>
+          <span><strong>Address : </strong> <?php echo "$address" ?></span>
         </div>
         <div class="edit_btn">
           <button class="button" id="edit_button">EDIT</button>
