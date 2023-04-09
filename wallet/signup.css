@@ -22,7 +22,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
+	min-height: 95vh;
 }
 
 .screen {		
@@ -37,7 +37,7 @@ body {
 .screen__content {
 	z-index: 1;
 	position: relative;	
-	height: 100%;
+	height: 95vh;
 }
 
 .screen__background {		
@@ -130,7 +130,7 @@ body {
 .login__submit {
 	background: #fff;
 	font-size: 14px;
-	padding: 16px 20px;
+	padding: 12px 16px;
 	border-radius: 26px;
 	border: 1px solid #D4D3E8;
 	text-transform: uppercase;
@@ -142,6 +142,7 @@ body {
 	box-shadow: 0px 2px 2px #5C5696;
 	cursor: pointer;
 	transition: .2s;
+	margin-bottom: 4%;
 }
 
 .login__submit:active,
@@ -162,14 +163,25 @@ body {
 
 .link-tag{
 	text-decoration: none;
-	font-size: 1.2rem;
-	margin-left: 4%;
-	border: #4C489D 2px solid;
-	border-radius: 20%;
-	padding: 0.5%;
+	font-size: 14px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	padding: 3%;
+	background-color: #fff;
+	color:#645cbb;
+	margin-left: 6%;
+	font-weight: 500;
+	margin-top: 20%;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .link-tag:hover{
-	background-color: green;
-	color: white;
+	background-color: #6A679E;
+	outline: none;
+	color: #fff;
+	border-color: #fff;
 }

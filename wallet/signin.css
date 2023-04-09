@@ -129,10 +129,9 @@ body {
 }
 
 .login__submit {
-	background: #fff;
+background: #fff;
 	font-size: 14px;
-	margin-top: 30px;
-	padding: 16px 20px;
+	padding: 12px 16px;
 	border-radius: 26px;
 	border: 1px solid #D4D3E8;
 	text-transform: uppercase;
@@ -144,6 +143,7 @@ body {
 	box-shadow: 0px 2px 2px #5C5696;
 	cursor: pointer;
 	transition: .2s;
+	margin-bottom: 4%;
 }
 
 .login__submit:active,
@@ -162,16 +162,28 @@ body {
 	color: #7875B5;
 }
 
+
 .link-tag{
 	text-decoration: none;
-	font-size: 1.2rem;
-	margin-left: 4%;
-	border: #4C489D 2px solid;
-	border-radius: 20%;
-	padding: 2%;
+	font-size: 14px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	padding: 4%;
+	background-color: #fff;
+	color:#645cbb;
+	margin-left: 7%;
+	font-weight: 500;
+	margin-top: 20%;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .link-tag:hover{
-	background-color: green;
-	color: white;
+	background-color: #6A679E;
+	outline: none;
+	color: #fff;
+	border-color: #fff;
 }
