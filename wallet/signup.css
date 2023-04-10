@@ -22,7 +22,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 95vh;
+	min-height: 100%;
 }
 
 .screen {		
@@ -37,7 +37,7 @@ body {
 .screen__content {
 	z-index: 1;
 	position: relative;	
-	height: 95vh;
+	height: 140vh;
 }
 
 .screen__background {		
